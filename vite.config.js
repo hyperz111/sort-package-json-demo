@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import { join } from "node:path";
 import tailwind from "@tailwindcss/vite";
-import pkg from "package.json" with { type: "json" };
+import pkg from "./package.json" with { type: "json" };
 
 export default defineConfig({
 	plugins: [tailwind()],

@@ -1,0 +1,23 @@
+{
+	"name": "sort-package-json-demo",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@hyperz111/prettier-config": "^1.0.3",
+		"@tailwindcss/vite": "^4.1.17",
+		"prettier": "^3.6.2",
+		"prettier-plugin-tailwindcss": "^0.7.1",
+		"vite": "^7.2.4"
+	},
+	"dependencies": {
+		"sort-package-json": "3.6.0",
+		"tailwindcss": "^4.1.17"
+	}
+}

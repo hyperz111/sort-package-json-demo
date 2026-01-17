@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>sort-package-json - Sort your package.json</title>
+	</head>
+	<body>
+		<div class="container mx-auto p-4">
+			<header class="flex flex-col items-center p-2 text-center">
+				<h1 class="code text-2xl">sort-package-json</h1>
+				<p>
+					v<span class="version">0.0.0</span> -
+					<a href="https://github.com/keithamus/sort-package-json" class="text-blue-500 hover:text-blue-700">GitHub</a>
+				</p>
+			</header>
+			<main class="flex h-full flex-col md:h-screen">
+				<div class="flex flex-col gap-2">
+					<label for="sort-order">Sort Order</label>
+					<input type="text" id="sort-order" value="[]" spellcheck="false" />
+					<button
+						id="sorter"
+						type="button"
+						class="border-2 border-gray-300 bg-gray-200 hover:cursor-pointer hover:border-gray-400 hover:bg-gray-300">
+						Sort
+					</button>
+					<div id="errors"></div>
+				</div>
+				<div class="grid grow grid-cols-1 gap-2 *:flex *:h-100 *:flex-col md:grid-cols-2 *:md:h-full">
+					<div>
+						<label for="package-json" class="font-bold">Your <code class="code">package.json</code></label>
+						<textarea id="package-json" class="grow" spellcheck="false" wrap="off"></textarea>
+					</div>
+					<div>
+						<label for="sorted" class="font-bold">Sorted <code class="code">package.json</code></label>
+						<textarea id="sorted" readonly class="grow" wrap="off"></textarea>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script type="module" src="/src/main.js"></script>
+	</body>
+</html>

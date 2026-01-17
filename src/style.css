@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+main > div > div > textarea,
+main > div > input {
+	@apply resize-none bg-neutral-900 p-2 font-mono text-white outline-transparent;
+}
+
+#errors > pre {
+	@apply overflow-x-auto border-2 border-red-500 bg-red-400 p-2;
+}
+
+.code {
+	@apply bg-gray-300 p-1 font-mono;
+}

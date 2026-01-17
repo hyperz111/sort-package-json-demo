@@ -1,9 +1,0 @@
-name: Try Workflow
-on: [push]
-
-jobs:
-  test:
-    if: github.repository == 'hyperz111/sort-package-json-demo'
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Successfully run workflow on upstream!!"
